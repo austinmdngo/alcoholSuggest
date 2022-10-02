@@ -19,13 +19,14 @@ function App() {
         <span>drinks within one hour of driving. (but please drink less)</span>
         </br>
     */
-    <div className="Information">
-      <label>Input your gender:
+  <div className="App">
+    <div className="information">
+      <label>Input your gender:</label>
+      <label>
       <select value={setGender.value} onChange={setGender.value}>
       <option value="male">Male</option>
       <option value="female">Female</option>
       </select>
-      <br></br>
       </label>
       <label>Input your age:</label>
       <input type="number" 
@@ -33,16 +34,18 @@ function App() {
           setAge(event.target.value);
         }}
       />
-      <br></br>
       <label>Input your weight (lbs):</label>
       <input type="number" 
         onChange={(event) => {
           setWeight(event.target.value);
         }}
       />
-      <br></br>
       <button>Submit</button>
+      <label>You should drink at absolute most:</label>
+      <label></label>
+      <label>drinks within one hour of driving. (but please drink less)</label>
     </div>
+  </div>
   );
 }
 
